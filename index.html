@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Financial Indicators of All 50 U.S. States</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- TITLE  -->
+    <div class="headerContainer">
+      <div class="headerTitle">
+          <h1>Financial Indicators of All 50 U.S. States</h1>
+      </div>
+    </div>
+      <div class="btnGroup"> 
+        <button onclick = "updateTreemap(this)" value="gdpPerCapita" autofocus>GDP per Capita</button>
+        <button onclick = "updateTreemap(this)" value="medianHouseholdIncome">Median Household Income</button>
+        <button onclick = "updateTreemap(this)" value="costOfLivingIndex">Cost of Living Index</button>
+        <button onclick = "updateTreemap(this)" value="medianHomePrice">Median Home Price</button>
+      </div>
+      <div class="chartContainer">
+        <div class="chartBox">
+          <canvas id="myChart"></canvas>
+          <div class="info">by Pam Ogbebor</div>
+        </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.0/dist/chartjs-chart-treemap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
